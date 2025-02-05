@@ -6,7 +6,7 @@ st.title("AI Text Generator")
 st.write("Interact with your fine-tuned language model hosted on Hugging Face Hub.")
 
 # Specify your model repository from Hugging Face
-model_name = "iamharikrisnan/my-fine-tuned-gpt2"  # Update this to your model's repository
+model_name = "iamharikrisnan/fine-tuned-gpt-medium"  # Update this to your model's repository
 
 # Option 1: If you are logged in via huggingface-cli, you can omit the token
 # Option 2: If the repository is private or you haven't logged in, pass the token
