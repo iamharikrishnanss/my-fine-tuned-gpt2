@@ -10,7 +10,7 @@ model_name = "iamharikrisnan/fine-tuned-gpt-medium"
 
 # Option 1: If you are logged in via huggingface-cli, you can omit the token
 # Option 2: If the repository is private or you haven't logged in, pass the token
-token = "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"  # Replace with your Hugging Face access token if needed
+token = st.secrets["HF_TOKEN"]
 
 tokenizer = AutoTokenizer.from_pretrained(model_name, use_auth_token=token)
 model = AutoModelForCausalLM.from_pretrained(model_name, use_auth_token=token)
